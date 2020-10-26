@@ -12,7 +12,7 @@ The technologies I used are
 
 Created the first main page with animation effects on the explore button, navigation bar, logo, and progress bar. Here is my demo of what I have so far.
 
-[![demo1](https://youtu.be/0Mr0n8waryk)](https://youtu.be/0Mr0n8waryk)
+![demo1](https://youtu.be/0Mr0n8waryk)
 
 ###### Future Updates
 
