@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiteen</title>
+
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+    <div class="whole">
+        <div class="firstHalf">
+            <div class="homeBtnWrapper">
+                <div onmouseover="hover()" onmouseout="unhover()" class="logos">
+                    <img id="logoImg" src="./images/logo.png">
+                    <p id="kiteen">KITEEN</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="secondHalf">
+            <!-- Nav bar -->
+            <ul class="navbar">
+                <li onclick="navBarActive('home')">
+                    <div id="home" class="navbarLine"></div>
+                    <a id="homelink">HOME</a>
+                </li>
+                <li onclick="navBarActive('review')">
+                    <div id="review" class="navbarLine"></div>
+
+                    <a id="reviewlink">REVIEW</a>
+
+                </li>
+                <li onclick="navBarActive('approach')">
+                    <div id="approach" class="navbarLine"></div>
+
+                    <a id="approachlink">APPROACH</a>
+
+                </li>
+
+                <li>
+                    <a class="sideDrawer">
+                        <img src="images/sideDrawer.png">
+                    </a>
+                </li>
+            </ul>
+
+            <!-- Prev, Next -->
+            <div class="prevNext">
+                <button id="prev" onclick="prev()">
+                    <div id="prevCircle">
+                        <p>PREV</p>
+                    </div>
+                </button>
+                <progress max="90" value="0" id="progressbar"></progress>
+                <button id="next" onclick="next()">
+                    <div id="nextCircle">
+                        <p>NEXT</p>
+                    </div>
+                </button>
+            </div>
+        </div>
+
+        <!-- main image -->
+        <div class="mainImageWrapper">
+            <img src="images/img1.png">
+        </div>
+
+        <!-- Elements in the middle of the page: title, explanation, explore -->
+        <div class="titleExplanationExplore">
+            <h1 id="title">Wooden Table</h1>
+            <p id="explanation">Donec dapibus mauris id odio ornare tempus. Duis sit amet accumsan justo, quis tempor
+                ligula. Quisque
+                quis pharetra felis.</p>
+            <button class="exploreBtn">EXPLORE</button>
+        </div>
+
+    </div>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>

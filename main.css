@@ -1,0 +1,282 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.whole {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.whole:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* font famil */
+
+/* First Half of the page */
+.firstHalf {
+  float: left;
+  height: 100%;
+  width: 50%;
+  background-color: #d69d01;
+}
+
+.homeBtnWrapper {
+  width: 40px;
+  background-color: white;
+  padding: 40px;
+  position: relative;
+}
+
+.homeBtnWrapper img {
+  transition: transform 0.5s, src 0.8s;
+  width: 30px;
+  cursor: pointer;
+}
+
+.logos:hover > img {
+  transform: translateX(-50%);
+}
+
+#kiteen {
+  transition: opacity 0.5s;
+  position: absolute;
+  top: 38px;
+  right: 24px;
+  font-size: 11px;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.logos:hover > #kiteen {
+  opacity: 1;
+}
+
+/* Second half of the page */
+.secondHalf {
+  float: left;
+  height: 100%;
+  width: 50%;
+  position: relative;
+}
+
+.navbar {
+  float: right;
+  padding: 40px 50px;
+  list-style-type: none;
+}
+
+.navbar li {
+  display: inline;
+  margin-left: 50px;
+  padding: 20px 0px;
+  cursor: pointer;
+  position: relative;
+}
+
+.navbar li:hover > .navbarLine {
+  opacity: 1;
+}
+.navbar li:hover > a {
+  color: #2f3245;
+}
+
+.navbar li a {
+  text-decoration: none;
+  color: #707070;
+  font-size: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navbarLine {
+  transition: opacity 0.5s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  border-top: solid 4px #2f3245;
+  width: 25px;
+  opacity: 0;
+}
+
+#prev,
+#next {
+  cursor: pointer;
+}
+
+#prev:focus,
+#next:focus {
+  outline: none;
+}
+
+.prevNext {
+  position: absolute;
+  display: inline;
+  bottom: 20px;
+  right: 100px;
+}
+
+#prev {
+  display: inline-block;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+
+#prevCircle {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  position: relative;
+  border: solid rgb(47, 50, 69, 0) 1px;
+  transition: 0.5s;
+}
+
+#prevCircle p {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  font-size: 12px;
+  color: #707070;
+}
+
+#prev:hover > #prevCircle {
+  border: solid rgb(47, 50, 69, 1) 1px;
+  transform: scale(1.2);
+}
+
+#prev:hover > #prevCircle p {
+  color: rgb(47, 50, 69);
+}
+
+#progressbar {
+  display: inline-block;
+  padding: 0;
+  /* color: black;
+  background-color: #b5becb;
+  height: 1px; */
+  -webkit-appearance: none;
+  appearance: none;
+  height: 1px;
+  margin-bottom: 35px;
+}
+
+#progressbar::-webkit-progress-bar {
+  background-color: #b5becb;
+}
+
+#progressbar::-webkit-progress-value {
+  background-color: #2f3245;
+}
+
+#next {
+  display: inline-block;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  visibility: visible;
+  transition: transform 0.2s;
+}
+
+#next:hover > #nextCircle {
+  transform: scale(1.2);
+  border: solid rgb(47, 50, 69, 1) 1px;
+}
+
+#next:hover > #nextCircle p {
+  color: rgb(47, 50, 69);
+}
+
+#nextCircle {
+  transition: 0.5s;
+
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: solid rgb(47, 50, 69, 0) 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  /* visibility: hidden; */
+}
+
+#nextCircle p {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  font-size: 12px;
+  color: #707070;
+  /* visibility: visible; */
+}
+/* Title, description, button */
+.titleExplanationExplore {
+  position: absolute;
+  width: 45%;
+  top: 30%;
+  left: 120px;
+}
+
+.exploreBtn {
+  background-image: linear-gradient(white, white);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  transition: background-size 0.5s, color 0.5s;
+  background-color: #2f3245;
+  border-color: #707070;
+  width: 130px;
+  height: 45px;
+  border: none;
+  color: white;
+  font-size: 10px;
+  margin-top: 5px;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.exploreBtn:focus {
+  outline: none;
+}
+
+.exploreBtn:hover {
+  background-size: 100% 100%;
+  color: #2f3245;
+}
+
+#title {
+  font-family: "Didot";
+  color: white;
+  font-size: 50px;
+  margin: 5px;
+}
+
+#explanation {
+  color: white;
+}
+
+/* main image wrapper */
+.mainImageWrapper {
+  position: absolute;
+  margin: auto;
+  top: 50%;
+  right: 120px;
+  transform: translateY(-50%);
+}
+
+.mainImageWrapper img {
+  width: 650px;
+  height: 400px;
+}
